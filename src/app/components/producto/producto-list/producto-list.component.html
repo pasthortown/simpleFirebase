@@ -1,0 +1,17 @@
+<div class="card mt-4">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Productos</strong></h5>
+      <table class="table table-sm table-hover">
+        <tbody>
+          <tr *ngFor="let producto of productos">
+            <td>{{producto.nombre}}</td>
+            <td>{{producto.clase}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="editar(producto)"><span class="fa fa-edit"></span></button>
+                <button class="btn btn-danger ml-1" (click)="borrar(producto)"><span class="fa fa-trash"></span></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
